@@ -1,0 +1,261 @@
+/ @media only screen and (max-width: 600px) {
+    .loremnote {
+        margin-top: 20px;
+        /* Adjust margin for mobile */
+    }
+
+    /* Add other responsive styles here */
+    body {
+        font-size: 14px;
+        /* Adjust font size for mobile */
+    }
+
+    .container {
+        padding: 10px;
+        /* Adjust padding for mobile */
+    }
+}
+
+/* ...existing code... */
+
+
+body {
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+
+}
+
+/*  */
+
+/* HEADER SECTION */
+
+header {
+    background-image: url(./images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    max-width: 1400px;
+    height: 800px;
+}
+
+.headerdiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1000.39px;
+    height: 32px;
+}
+
+.headponesspan {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 161px;
+    height: 32px;
+}
+
+.ulspan {
+    /* width: 255px; */
+    height: 15px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+a:hover {
+    color: #FF6565;
+}
+
+.headermain {
+    margin-top: 300px;
+}
+
+.loremp {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.loremh1 {
+    margin-bottom: 0;
+}
+
+
+
+.callforaction {
+    border-radius: 50px;
+    width: 162px;
+    height: 44px;
+    background-color: #FF6565;
+    color: white;
+    outline: none;
+    border-color: transparent;
+
+
+}
+
+
+button:hover {
+    opacity: 0.9
+}
+
+.loremnote {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+
+/* what we do section */
+
+.whatwedo {
+    background-color: #FFFFFF;
+    color: #000;
+}
+
+.loremwhatwedo {
+    margin-top: 200px;
+}
+
+
+.imgdiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  transition: transform 0.5s ease, filter 0.5s ease;
+
+}
+
+.imgdiv1 {
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.imgdiv1:hover {
+    transform: scale(1.2); /* Zoom in */
+    filter: brightness(1.2);
+}
+
+
+/* Our results section */
+
+.ourresults {
+    background-image: url(./images/headphones_hero_2.jpg);
+    max-width: 1400px;
+    height: 650px;
+}
+
+.results {
+    padding-top: 300px;
+}
+
+.shape {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.shapes {
+    width: 190px;
+    height: 190px;
+    margin-top: 50px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    /* transition: opacity 0.5s ease; */
+}
+
+
+.shapes:hover {
+    animation: bounce 0.5s ease-in-out;
+    transform: scale(1.2); /* Zoom in */
+    /* opacity: 0.5; */
+}
+
+    
+
+@keyframes bounce {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    50% {
+        transform: translateX(50px) translateY(-20px);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+
+.pentagon {
+   
+    background-color: #FF6565; 
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+
+.shapes>h1 {
+    font-size: 46px;
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+
+.pentagon {
+   
+    background-color: #FF6565; 
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+
+/* contact us */
+
+.line {
+    color: black;
+    margin-top: 200px;
+    line-height: 50px;
+}
+
+.actionbtn {
+    width: 162px;
+    height: 44px;
+    border-radius: 50px;
+    background-color: #FF6565;
+    color: #FFFFFF;
+    border-color: transparent;
+}
+
+
+.footer {
+    margin-top: 100px;
+    background-color: #071629;
+    color: #666;
+    max-width: 1400px;
+    height: 249px;
+}
+
+.footerdiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 80px;
+    margin: 0 10%;
+}
+
+.copywrite {
+    padding-top: 50px;
+}
