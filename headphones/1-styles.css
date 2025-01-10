@@ -18,18 +18,20 @@
 
 
 
+
 body {
     background-image: url(./images/headphones_hero_1.jpg);
     background-repeat: no-repeat;
-    /* background-position: center; */
     color: #FFFFFF;
     text-align: center;
+
 }
 
 
 /*  */
 
 /* HEADER SECTION */
+
 .headerdiv {
     display: flex;
     flex-direction: row;
@@ -100,4 +102,26 @@ button:hover {
 
 .loremnote {
     margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+
+/* what we do section */
+
+.whatwedo {
+    background-color: #FFFFFF;
+    color: #000;
+}
+
+.loremwhatwedo {
+    margin-top: 400px
+}
+
+.imgdiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+    
 }
