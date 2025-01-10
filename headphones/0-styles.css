@@ -1,7 +1,32 @@
+@media only screen and (max-width: 600px) {
+    .loremnote {
+        margin-top: 20px; /* Adjust margin for mobile */
+    }
+
+    /* Add other responsive styles here */
+    body {
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+
+    .container {
+        padding: 10px; /* Adjust padding for mobile */
+    }
+}
+
+/* ...existing code... */
+
+
+
+
 body {
     background-image: url(./images/headphones_hero_1.jpg);
-    color: white;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    text-align: center;
 }
+
+
+/*  */
 
 /* HEADER SECTION */
 .headerdiv {
@@ -19,7 +44,7 @@ body {
     height: 32px;
 }
 
-.ulspan{
+.ulspan {
     /* width: 255px; */
     height: 15px;
 }
@@ -34,10 +59,45 @@ ul {
 li {
     list-style: none;
     padding: 10px;
-} 
-
-li:hover{
-    color: red;
 }
 
-  
+li:hover {
+    color: #FF6565;
+}
+
+.headermain {
+    margin-top: 300px;
+}
+
+.loremp {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.loremh1 {
+    margin-bottom: 0;
+}
+
+
+
+.callforaction {
+    border-radius: 50px;
+    width: 162px;
+    height: 44px;
+    background-color: #FF6565;
+    color: white;
+    outline: none;
+
+    
+}
+
+
+button:hover {
+    opacity: 0.9
+}
+
+.loremnote {
+    margin-top: 70px;
+}
+
+
