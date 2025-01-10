@@ -1,1 +1,1 @@
-Simple landing page using html and css
+Goodluck. Simple landing page using html and css
