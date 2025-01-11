@@ -1,19 +1,18 @@
-
 body {
     color: #FFFFFF;
     text-align: center;
     margin: 0;
+    align-items: center;
 
 }
-
-/*  */
 
 /* HEADER SECTION */
 
 header {
     background-image: url(./images/headphones_hero_1.jpg);
+    background-position: center;
     background-repeat: no-repeat;
-    max-width: 1400px;
+    background-size: cover;
     height: 800px;
 }
 
@@ -22,9 +21,24 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: auto;
-    max-width: 1000.39px;
+    padding-top: 20px;
+    margin: 0 10%;
+    /* max-width: 1000.39px; */
     height: 32px;
+}
+
+p {
+    line-height: 26px;
+}
+
+@media  (max-width: 768px) {
+    .headerdiv {
+        margin: 0 5%;
+    }
+    li {
+        padding: 5px;
+    }
+    
 }
 
 .headponesspan {
@@ -32,6 +46,11 @@ header {
     flex-wrap: wrap;
     max-width: 161px;
     height: 32px;
+}
+
+a{
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .ulspan {
@@ -51,7 +70,7 @@ li {
     padding: 10px;
 }
 
-li:hover {
+a:hover {
     color: #FF6565;
 }
 
@@ -77,9 +96,7 @@ li:hover {
     background-color: #FF6565;
     color: white;
     outline: none;
-    border-color: transparent;
-
-
+    border-color: transparent; 
 }
 
 
@@ -101,56 +118,80 @@ button:hover {
 }
 
 .loremwhatwedo {
-    margin-top: 200px;
+    margin-top: 200px
 }
 
 .imgdiv {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 100px;
-    margin-bottom: 20px;
+    justify-content: space-around; */
 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 images in one row by default */
+    gap: 10px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
+
+@media screen and (max-width: 768px) {
+    .imgdiv {
+        grid-template-columns: repeat(2, 1fr); /* Switch to 2x2 layout */
+      }
+}
 
 /* Our results section */
 
 .ourresults {
     background-image: url(./images/headphones_hero_2.jpg);
-    max-width: 1400px;
-    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* max-width: 1400px; */
+    height: auto;
+ 
 }
 
 .results {
-    padding-top: 300px;
+    padding-top: 200px;
 }
 
 .shape {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 images in one row by default */
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .shape {
+        grid-template-columns: repeat(2, 1fr); /* Switch to 2x2 layout */
+      }
 }
 
 .shapes {
-    width: 190px;
+    width: auto;
     height: 190px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
-
-.shapes {
+.shapes{
     text-align: center;
     background-image: url(./images/pentagone.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-
-
+    
+    
 }
 
-.shapes>h1 {
+.shapes >h1 {
     font-size: 46px;
     padding-top: 15px;
     margin-bottom: 0;
@@ -173,6 +214,14 @@ button:hover {
     border-color: transparent;
 }
 
+@media screen and (max-width: 768px) {
+   .actionbtn {
+       margin-bottom: 50px;
+   }
+    
+}
+
+/* FOOTER */
 
 .footer {
     margin-top: 100px;

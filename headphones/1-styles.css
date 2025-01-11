@@ -1,30 +1,56 @@
-
 body {
-    background-image: url(./images/headphones_hero_1.jpg);
-    background-repeat: no-repeat;
     color: #FFFFFF;
     text-align: center;
+    margin: 0;
 
 }
 
-
-/*  */
-
 /* HEADER SECTION */
+
+header {
+    background-image: url(./images/headphones_hero_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+    height: 800px;
+}
 
 .headerdiv {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: auto;
-    width: 1000.39px;
+    padding-top: 20px;
+    margin: 0 10%;
+    /* max-width: 1000.39px; */
     height: 32px;
 }
 
+p {
+    line-height: 26px;
+}
+
+@media  (max-width: 768px) {
+    .headerdiv {
+        margin: 0 5%;
+    }
+    li {
+        padding: 5px;
+    }
+    
+}
+
 .headponesspan {
-    width: 161px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 161px;
     height: 32px;
+}
+
+a{
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .ulspan {
@@ -44,7 +70,7 @@ li {
     padding: 10px;
 }
 
-li:hover {
+a:hover {
     color: #FF6565;
 }
 
@@ -70,9 +96,7 @@ li:hover {
     background-color: #FF6565;
     color: white;
     outline: none;
-    border-color: transparent;
-
-    
+    border-color: transparent; 
 }
 
 
@@ -94,14 +118,25 @@ button:hover {
 }
 
 .loremwhatwedo {
-    margin-top: 400px
+    margin-top: 200px
 }
 
 .imgdiv {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-around; */
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 images in one row by default */
+    gap: 10px;
     margin-top: 100px;
-    
+    margin-bottom: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .imgdiv {
+        grid-template-columns: repeat(2, 1fr); /* Switch to 2x2 layout */
+      }
 }
